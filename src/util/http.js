@@ -5,7 +5,7 @@ import { getDigitalSignsImages } from "./getDigitalSignsImages";
 export async function fetchDrupalData() {
     const response = await axios
       .get(
-        `https://cors-anywhere.herokuapp.com/${
+        `${
          process.env.REACT_APP_DRUPAL_API
         }`,
         {

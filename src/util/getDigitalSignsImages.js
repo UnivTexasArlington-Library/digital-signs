@@ -3,7 +3,7 @@ import axios from "axios";
 export async function getDigitalSignsImages(digitalSignsURLs) {
     const imageURLs = []
     for (let i = 0; i < digitalSignsURLs.length; i++) {
-        const response = await axios.get(`https://cors-anywhere.herokuapp.com/${digitalSignsURLs[i]}`);
+        const response = await axios.get(`${digitalSignsURLs[i]}`);
         const imageData = response.data
         // console.log(`https://libraries.uta.edu/${imageData.data.attributes.uri.url}`)
         const imageURL = `https://libraries.uta.edu/${imageData.data.attributes.uri.url}`
