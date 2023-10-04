@@ -1,32 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import Carousel from 'react-bootstrap/Carousel';
 import { fetchDrupalData } from './util/http';
-import { useEffect} from "react";
+import { useEffect, useState} from "react";
 
 function App() {
+  const [imageURLs, setImageURLs] = useState()
   useEffect(() => {
     async function getDrupalData() {
       const drupalData = await fetchDrupalData();
       console.log(drupalData)
+      setImageURLs(drupalData)
     }
     getDrupalData();
   }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {imageURLs && <Carousel interval={8000}>{imageURLs.map((imageURL) => (
+           <Carousel.Item>
+           <img
+             style={{width: '100%', height: '100%'}}
+             src={imageURL}
+           />
+         </Carousel.Item>
+      ))}</Carousel>}
     </div>
   );
 }

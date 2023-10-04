@@ -36,7 +36,8 @@ export async function fetchDrupalData() {
       const digitalSignsData = response.data
       let digitalSigns = [];
       const digitalSignsURLs = await getDigitalSignsURLs(digitalSignsData)
-      console.log("digitalSignsURLS", digitalSignsURLs)
+      // console.log("digitalSignsURLS", digitalSignsURLs)
       digitalSigns = await getDigitalSignsImages(digitalSignsURLs)
-      console.log("digitalSignsImages", digitalSigns)
+      // console.log("digitalSignsImages", digitalSigns)
+      return digitalSigns
   }

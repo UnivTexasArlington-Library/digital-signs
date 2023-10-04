@@ -5,7 +5,7 @@ export async function getDigitalSignsURLs(digitalSignsData) {
     const imageURLs = []
     for (let i = 0; i < digitalSignsData.data.length; i++) {
         const status = digitalSignsData.data[i].attributes.status
-        console.log(status)
+        // console.log(status)
         const imageURL = digitalSignsData.data[i].relationships.field_digital_signs_image.links.related.href
         imageURLs.push(imageURL)
 //    console.log("digitalSigns", digitalSignsData.data[i].relationships.field_digital_signs_image.links.related.href)
