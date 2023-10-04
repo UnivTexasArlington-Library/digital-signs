@@ -11,11 +11,14 @@ function App() {
   const [imageURLs, setImageURLs] = useState()
   const queryClient = useQueryClient()
   const { isLoading, isError, data, error } = useQuery('todos', fetchDrupalData)
-  setInterval(async() => {
-    const drupalData = await fetchDrupalData();
-    queryClient.setQueryData('todos', drupalData)
-  }, 
-    120000)
+  useEffect(() => {
+    setInterval(async() => {
+      const drupalData = await fetchDrupalData();
+      queryClient.setQueryData('todos', drupalData)
+    }, 
+      120000)
+  },[])
+
   // useEffect(() => {
   //   const clearCacheData = () => {
   //     caches.keys().then((names) => {
