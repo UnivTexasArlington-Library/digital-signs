@@ -12,11 +12,10 @@ function App() {
   const queryClient = useQueryClient()
   const { isLoading, isError, data, error } = useQuery('todos', fetchDrupalData)
   useEffect(() => {
-    setInterval(async() => {
-      const drupalData = await fetchDrupalData();
-      queryClient.setQueryData('todos', drupalData)
-    }, 
-      120000)
+  setInterval(() => {
+    window.location.reload(true)
+  }, 
+    120000)
   },[])
 
   // useEffect(() => {
