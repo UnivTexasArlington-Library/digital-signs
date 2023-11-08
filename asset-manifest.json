@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/digitalSignsApp/digital-signs/static/css/main.78bc1710.css",
-    "main.js": "/digitalSignsApp/digital-signs/static/js/main.52d5116d.js",
-    "static/js/787.25aae483.chunk.js": "/digitalSignsApp/digital-signs/static/js/787.25aae483.chunk.js",
-    "static/media/logo.svg": "/digitalSignsApp/digital-signs/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/digitalSignsApp/digital-signs/index.html",
-    "main.78bc1710.css.map": "/digitalSignsApp/digital-signs/static/css/main.78bc1710.css.map",
-    "main.52d5116d.js.map": "/digitalSignsApp/digital-signs/static/js/main.52d5116d.js.map",
-    "787.25aae483.chunk.js.map": "/digitalSignsApp/digital-signs/static/js/787.25aae483.chunk.js.map"
+    "main.css": "/digitalSignsApp/digital_signs/static/css/main.78bc1710.css",
+    "main.js": "/digitalSignsApp/digital_signs/static/js/main.2af09fad.js",
+    "static/js/787.25aae483.chunk.js": "/digitalSignsApp/digital_signs/static/js/787.25aae483.chunk.js",
+    "static/media/logo.svg": "/digitalSignsApp/digital_signs/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/digitalSignsApp/digital_signs/index.html",
+    "main.78bc1710.css.map": "/digitalSignsApp/digital_signs/static/css/main.78bc1710.css.map",
+    "main.2af09fad.js.map": "/digitalSignsApp/digital_signs/static/js/main.2af09fad.js.map",
+    "787.25aae483.chunk.js.map": "/digitalSignsApp/digital_signs/static/js/787.25aae483.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.78bc1710.css",
-    "static/js/main.52d5116d.js"
+    "static/js/main.2af09fad.js"
   ]
 }
